@@ -1,0 +1,1031 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday Pinkan 🌸</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         FLOATING DECORATIONS
+    ========================== -->
+
+    <div class="decor decor-1">🌸</div>
+    <div class="decor decor-2">✨</div>
+    <div class="decor decor-3">🦋</div>
+    <div class="decor decor-4">🌷</div>
+    <div class="decor decor-5">⭐</div>
+    <div class="decor decor-6">☁️</div>
+    <div class="decor decor-7">🌈</div>
+
+
+    <!-- =========================
+         SCENE 1
+    ========================== -->
+
+    <main>
+
+        <section id="scene1" class="scene active">
+
+            <div class="cloud cloud-left">☁️</div>
+            <div class="cloud cloud-right">☁️</div>
+
+            <div class="welcome-card">
+
+                <div class="small-label">
+                    ✨ A little birthday surprise ✨
+                </div>
+
+                <div class="main-flower">
+                    🌷
+                </div>
+
+                <h1>
+                    Hai Pinkan! 💗
+                </h1>
+
+                <p class="subtitle">
+                    Anak cantik, anak baik... 🌸
+                </p>
+
+                <div class="question-box">
+
+                    <p>
+                        Sekarang Pinkan<br>
+                        umur berapa? 🎂
+                    </p>
+
+                    <div class="age-buttons">
+
+                        <button class="age-btn" data-age="6">
+                            6
+                        </button>
+
+                        <button class="age-btn correct" data-age="7">
+                            7
+                        </button>
+
+                        <button class="age-btn" data-age="8">
+                            8
+                        </button>
+
+                        <button class="age-btn" data-age="9">
+                            9
+                        </button>
+
+                    </div>
+
+                    <p id="ageMessage" class="age-message"></p>
+
+                </div>
+
+                <div class="tiny-note">
+                    💕 pilih yang benar yaa
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SCENE 2
+        ========================== -->
+
+        <section id="scene2" class="scene">
+
+            <div class="celebration-card">
+
+                <div class="celebration-icon">
+                    🎉
+                </div>
+
+                <h2>
+                    Wihhh! 😆
+                </h2>
+
+                <p>
+                    Udah <strong>7 tahun!</strong>
+                </p>
+
+                <p>
+                    Pinkan udah gede yaa sekarang! 🥰
+                </p>
+
+                <div class="big-seven">
+                    7
+                </div>
+
+                <button id="startAdventure" class="main-button">
+                    Mulai kejutan 💗
+                </button>
+
+            </div>
+
+        </section>
+
+
+    
+        <!-- =========================
+             SCENE 3 - BALLOON GAME
+        ========================== -->
+
+        <section id="scene3" class="scene">
+
+            <div class="balloon-card">
+
+                <div class="game-label">
+                    🎈 MINI BIRTHDAY GAME 🎈
+                </div>
+
+                <h2>
+                    Pecahkan 7 balon! 💗
+                </h2>
+
+                <p class="game-description">
+                    Ayo Pinkan! Klik semua balonnya<br>
+                    sebelum lanjut ke kejutan berikutnya ✨
+                </p>
+
+                <div class="balloon-progress">
+                    <span id="balloonCount">0</span> / 7 balon pecah 🎈
+                </div>
+
+                <div id="balloonArea" class="balloon-area">
+
+                    <button class="balloon balloon-pink" data-balloon="1">
+                        🎈
+                    </button>
+
+                    <button class="balloon balloon-blue" data-balloon="2">
+                        🎈
+                    </button>
+
+                    <button class="balloon balloon-yellow" data-balloon="3">
+                        🎈
+                    </button>
+
+                    <button class="balloon balloon-purple" data-balloon="4">
+                        🎈
+                    </button>
+
+                    <button class="balloon balloon-mint" data-balloon="5">
+                        🎈
+                    </button>
+
+                    <button class="balloon balloon-peach" data-balloon="6">
+                        🎈
+                    </button>
+
+                    <button class="balloon balloon-pink2" data-balloon="7">
+                        🎈
+                    </button>
+
+                </div>
+
+                <div id="balloonMessage" class="balloon-message">
+                    Klik balonnya! 🎈
+                </div>
+
+                <button
+                    id="continueAfterBalloons"
+                    class="main-button hidden"
+                >
+                    Lanjut ke kejutan ✨
+                </button>
+
+            </div>
+
+        </section>
+
+    
+        <!-- =========================
+             SCENE 4 - BIRTHDAY WISH
+        ========================== -->
+
+        <section id="scene4" class="scene">
+
+            <div class="wish-card">
+
+                <div class="wish-moon">
+                    🌙
+                </div>
+
+                <div class="game-label">
+                    ✨ MAKE A WISH ✨
+                </div>
+
+                <h2>
+                    Yuk buat satu harapan! ⭐
+                </h2>
+
+                <p class="wish-description">
+                    Pilih satu bintang yang paling kamu suka.
+                    <br>
+                    Katakan harapanmu dalam hati yaa 💗
+                </p>
+
+                <div class="stars-area">
+
+                    <button class="wish-star" data-star="1">
+                        ⭐
+                    </button>
+
+                    <button class="wish-star" data-star="2">
+                        ⭐
+                    </button>
+
+                    <button class="wish-star" data-star="3">
+                        ⭐
+                    </button>
+
+                    <button class="wish-star" data-star="4">
+                        ⭐
+                    </button>
+
+                    <button class="wish-star" data-star="5">
+                        ⭐
+                    </button>
+
+                </div>
+
+                <p id="wishMessage" class="wish-message">
+                    Pilih satu bintang ✨
+                </p>
+
+                <button
+                    id="continueAfterWish"
+                    class="main-button hidden"
+                >
+                    Lanjut 🌈
+                </button>
+
+            </div>
+
+        </section>
+
+    
+        <!-- =========================
+             SCENE 5 - DREAM
+        ========================== -->
+
+        <section id="scene5" class="scene">
+
+            <div class="dream-card">
+
+                <div class="dream-rainbow">
+                    🌈
+                </div>
+
+                <div class="game-label">
+                    💭 PINKAN'S DREAM 💭
+                </div>
+
+                <h2>
+                    Kalau besar nanti,<br>
+                    Pinkan mau jadi apa? ✨
+                </h2>
+
+                <p class="dream-description">
+                    Pilih yang paling Pinkan suka yaa 💗
+                </p>
+
+
+                <div class="dream-grid">
+
+                    <button
+                        class="dream-option"
+                        data-dream="Dokter"
+                    >
+                        <span class="dream-icon">👩‍⚕️</span>
+                        <span>Dokter</span>
+                    </button>
+
+
+                    <button
+                        class="dream-option"
+                        data-dream="Guru"
+                    >
+                        <span class="dream-icon">👩‍🏫</span>
+                        <span>Guru</span>
+                    </button>
+
+
+                    <button
+                        class="dream-option"
+                        data-dream="Astronaut"
+                    >
+                        <span class="dream-icon">🚀</span>
+                        <span>Astronaut</span>
+                    </button>
+
+
+                    <button
+                        class="dream-option"
+                        data-dream="Seniman"
+                    >
+                        <span class="dream-icon">🎨</span>
+                        <span>Seniman</span>
+                    </button>
+
+                </div>
+
+
+                <div class="custom-dream">
+
+                    <p>
+                        Atau punya cita-cita sendiri? 💗
+                    </p>
+
+                    <div class="custom-dream-row">
+
+                        <input
+                            id="customDream"
+                            type="text"
+                            maxlength="40"
+                            placeholder="Tulis cita-citamu..."
+                        >
+
+                        <button
+                            id="customDreamButton"
+                            class="small-button"
+                        >
+                            Pilih ✨
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <p
+                    id="dreamMessage"
+                    class="dream-message"
+                ></p>
+
+
+                <button
+                    id="continueAfterDream"
+                    class="main-button hidden"
+                >
+                    Kirim cita-cita ke langit 🌈
+                </button>
+
+            </div>
+
+        </section>
+
+    
+        <!-- =========================
+             SCENE 6 - SEND DREAM
+        ========================== -->
+
+        <section id="scene6" class="scene">
+
+            <div class="sky-card">
+
+                <div class="sky-stars">
+                    ✨ ⭐ ✨
+                </div>
+
+                <div class="game-label">
+                    🌈 DREAM TO THE SKY 🌈
+                </div>
+
+                <h2>
+                    Cita-cita Pinkan<br>
+                    akan dikirim ke langit! ✨
+                </h2>
+
+                <div class="dream-cloud">
+
+                    <div class="dream-result-icon">
+                        🌟
+                    </div>
+
+                    <p>
+                        Pinkan ingin menjadi
+                    </p>
+
+                    <strong id="dreamResult">
+                        ...
+                    </strong>
+
+                </div>
+
+                <button
+                    id="sendDreamButton"
+                    class="main-button"
+                >
+                    Kirim ke langit! 🚀
+                </button>
+
+                <p
+                    id="skyMessage"
+                    class="sky-message"
+                ></p>
+
+                <button
+                    id="continueAfterSky"
+                    class="main-button hidden"
+                >
+                    Lanjut 🌱
+                </button>
+
+            </div>
+
+        </section>
+
+    
+        <!-- =========================
+             SCENE 7 - MAGIC FLOWER
+        ========================== -->
+
+        <section id="scene7" class="scene">
+
+            <div class="plant-card">
+
+                <div class="plant-label">
+                    🌱 MAGIC GARDEN 🌱
+                </div>
+
+                <h2>
+                    Yuk tanam bunga ajaib! 🌸
+                </h2>
+
+                <p class="plant-description">
+                    Bunga ini akan tumbuh kalau Pinkan
+                    merawatnya dengan baik 💗
+                </p>
+
+                <div class="plant-stage">
+
+                    <div id="plantFlower" class="plant-flower">
+                        🌰
+                    </div>
+
+                    <div class="soil">
+                        🌱
+                    </div>
+
+                </div>
+
+                <div class="water-progress">
+
+                    <span id="waterCount">0</span> / 3
+                    kali disiram 💧
+
+                </div>
+
+                <p id="plantMessage" class="plant-message">
+                    Bunganya masih kecil...
+                </p>
+
+                <button
+                    id="waterButton"
+                    class="main-button"
+                >
+                    Siram bunga 💧
+                </button>
+
+                <button
+                    id="continueAfterPlant"
+                    class="main-button hidden"
+                >
+                    Lihat bunganya! 🌸
+                </button>
+
+            </div>
+
+        </section>
+
+    
+        <!-- =========================
+             SCENE 8 - MAGIC FLOWER
+        ========================== -->
+
+        <section id="scene8" class="scene">
+
+            <div class="magic-flower-card">
+
+                <div class="magic-label">
+                    ✨ MAGIC FLOWER ✨
+                </div>
+
+                <h2>
+                    Ada sesuatu di dalam<br>
+                    bunga ini... 🌸
+                </h2>
+
+                <p class="magic-description">
+                    Coba sentuh bunganya pelan-pelan 💗
+                </p>
+
+
+                <button
+                    id="magicFlower"
+                    class="magic-flower"
+                >
+                    🌷
+                </button>
+
+
+                <div
+                    id="magicFlowerMessage"
+                    class="magic-flower-message"
+                >
+                    🌸 Sentuh bunga ajaibnya 🌸
+                </div>
+
+
+                <button
+                    id="enterGarden"
+                    class="main-button hidden"
+                >
+                    Masuk ke taman ajaib 🌳
+                </button>
+
+            </div>
+
+        </section>
+
+    
+        <!-- =========================
+             SCENE 9 - SECRET GARDEN
+        ========================== -->
+
+        <section id="scene9" class="scene">
+
+            <div class="garden-card">
+
+                <div class="garden-sky">
+                    ☁️ ✨ 🌙 ✨ ☁️
+                </div>
+
+                <div class="garden-title">
+                    🌳 SECRET GARDEN 🌳
+                </div>
+
+                <h2>
+                    Selamat datang di<br>
+                    taman ajaib Pinkan! 🌸
+                </h2>
+
+                <p class="garden-description">
+                    Tapi... sepertinya ada sesuatu
+                    yang sedang bersembunyi 👀
+                </p>
+
+                <div class="garden-scene">
+
+                    <div class="garden-tree tree-left">
+                        🌳
+                    </div>
+
+                    <div class="garden-tree tree-right">
+                        🌳
+                    </div>
+
+                    <div class="garden-flower flower-a">
+                        🌷
+                    </div>
+
+                    <div class="garden-flower flower-b">
+                        🌸
+                    </div>
+
+                    <div class="garden-flower flower-c">
+                        🌼
+                    </div>
+
+                    <button
+                        class="butterfly butterfly-1"
+                        data-butterfly="1"
+                    >
+                        🦋
+                    </button>
+
+                    <button
+                        class="butterfly butterfly-2"
+                        data-butterfly="2"
+                    >
+                        🦋
+                    </button>
+
+                    <button
+                        class="butterfly butterfly-3"
+                        data-butterfly="3"
+                    >
+                        🦋
+                    </button>
+
+                </div>
+
+                <div class="butterfly-progress">
+
+                    🦋
+                    <span id="butterflyCount">0</span>
+                    / 3 ditemukan
+
+                </div>
+
+                <p
+                    id="butterflyMessage"
+                    class="butterfly-message"
+                >
+                    Cari kupu-kupunya! 👀🦋
+                </p>
+
+                <button
+                    id="continueAfterButterflies"
+                    class="main-button hidden"
+                >
+                    Buka rahasia 💌
+                </button>
+
+            </div>
+
+        </section>
+
+    
+        <!-- =========================
+             SCENE 10 - SECRET LETTER
+        ========================== -->
+
+        <section id="scene10" class="scene">
+
+            <div class="letter-discovery-card">
+
+                <div class="letter-stars">
+                    ✨ 💗 ✨
+                </div>
+
+                <div class="game-label">
+                    💌 SECRET MESSAGE 💌
+                </div>
+
+                <h2>
+                    Pinkan menemukan<br>
+                    sesuatu! 👀
+                </h2>
+
+                <p class="letter-discovery-text">
+                    Kupu-kupu terakhir membawa
+                    sebuah surat khusus untuk Pinkan...
+                </p>
+
+
+                <div class="envelope-wrapper">
+
+                    <button
+                        id="secretEnvelope"
+                        class="secret-envelope"
+                    >
+
+                        <div class="envelope-back">
+                        </div>
+
+                        <div class="envelope-paper">
+                            💗
+                        </div>
+
+                        <div class="envelope-front">
+                        </div>
+
+                        <div class="envelope-heart">
+                            💌
+                        </div>
+
+                    </button>
+
+                </div>
+
+
+                <p
+                    id="envelopeMessage"
+                    class="envelope-message"
+                >
+                    💌 Klik amplopnya...
+                </p>
+
+
+                <button
+                    id="continueAfterLetter"
+                    class="main-button hidden"
+                >
+                    Baca suratnya 💗
+                </button>
+
+            </div>
+
+        </section>
+
+    
+        <!-- =========================
+             SCENE 11 - BIRTHDAY LETTER
+        ========================== -->
+
+        <section id="scene11" class="scene">
+
+            <div class="birthday-letter-card">
+
+                <div class="letter-top">
+
+                    <span>💌</span>
+
+                    <span>
+                        Untuk Pinkan 💗
+                    </span>
+
+                    <span>🌸</span>
+
+                </div>
+
+
+                <div class="letter-paper-real">
+
+                    <div class="letter-decoration">
+                        🌷 ✨ 🌷
+                    </div>
+
+                    <h2>
+                        Selamat Ulang Tahun! 🎂
+                    </h2>
+
+                    <div
+                        id="typedLetter"
+                        class="typed-letter"
+                    ></div>
+
+                    <div
+                        id="letterCursor"
+                        class="letter-cursor"
+                    >
+                        |
+                    </div>
+
+                    <div
+                        id="letterSignature"
+                        class="letter-signature hidden"
+                    >
+                        Dari kakak yang selalu
+                        mendoakan Pinkan ❤️
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="continueAfterReading"
+                    class="main-button hidden"
+                >
+                    Ada satu kejutan lagi 🎂
+                </button>
+
+            </div>
+
+        </section>
+
+    
+<!-- SCENE 12 -->
+<!-- SCENE 12 — BIRTHDAY CAKE -->
+<section class="scene" id="scene12">
+
+    <div class="card cake-game-card">
+
+        <div class="cake-top-decoration">
+            ✨ 🌸 ✨
+        </div>
+
+        <h1 class="cake-title">
+            Kita bikin kue dulu! 🎂
+        </h1>
+
+        <p class="subtitle cake-subtitle">
+            Kue ulang tahun Pinkan harus punya
+            <strong>7 lilin</strong> karena Pinkan sekarang sudah 7 tahun! 💗
+        </p>
+
+        <div class="big-cake-stage" id="cakeStage">
+
+            <div class="cake-float float-one">✨</div>
+            <div class="cake-float float-two">💗</div>
+            <div class="cake-float float-three">⭐</div>
+            <div class="cake-float float-four">🌸</div>
+
+            <div class="big-candle-row" id="bigCandleRow">
+
+                <div class="big-candle-slot"></div>
+                <div class="big-candle-slot"></div>
+                <div class="big-candle-slot"></div>
+                <div class="big-candle-slot"></div>
+                <div class="big-candle-slot"></div>
+                <div class="big-candle-slot"></div>
+                <div class="big-candle-slot"></div>
+
+            </div>
+
+            <div class="big-cake">
+
+                <div class="cake-top">
+
+                    <div class="cream cream-one"></div>
+                    <div class="cream cream-two"></div>
+                    <div class="cream cream-three"></div>
+                    <div class="cream cream-four"></div>
+                    <div class="cream cream-five"></div>
+
+                    <div class="sprinkle s1"></div>
+                    <div class="sprinkle s2"></div>
+                    <div class="sprinkle s3"></div>
+                    <div class="sprinkle s4"></div>
+                    <div class="sprinkle s5"></div>
+
+                </div>
+
+                <div class="cake-middle">
+
+                    <span class="cake-heart">♥</span>
+                    <span class="cake-heart">♥</span>
+                    <span class="cake-heart">♥</span>
+
+                </div>
+
+                <div class="cake-ribbon">
+
+                    <div class="ribbon-center">💗</div>
+
+                </div>
+
+                <div class="cake-bottom">
+
+                    <span>✨</span>
+                    <span>🌸</span>
+                    <span>✨</span>
+
+                </div>
+
+            </div>
+
+            <div class="cake-plate"></div>
+
+        </div>
+
+        <div class="cake-progress-big">
+
+            <div class="cake-progress-text" id="cakeProgress">
+                0 / 7 lilin 🕯️
+            </div>
+
+            <div class="cake-progress-bar">
+
+                <div
+                    class="cake-progress-fill"
+                    id="cakeProgressFill">
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="cake-message-big" id="cakeMessage">
+            Yuk tambahkan lilinnya satu-satu! 🌸
+        </p>
+
+        <button
+            class="main-button cake-action-button"
+            id="addCandle">
+
+            🕯️ Tambahkan lilin
+
+        </button>
+
+        <button
+            class="main-button cake-action-button hidden"
+            id="blowCandles">
+
+            💨 Tiup lilinnya!
+
+        </button>
+
+        <button
+            class="main-button cake-action-button hidden"
+            id="finalSurprise">
+
+            🎉 Lihat kejutan terakhir
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- SCENE 13 — FINAL -->
+
+<section class="scene" id="scene13">
+
+    <div class="final-simple-card">
+
+        <div class="final-party">
+            🎉
+        </div>
+
+        <h1 class="final-simple-title">
+            HAPPY 7TH BIRTHDAY!
+        </h1>
+
+        <h2 class="final-simple-name">
+            PINKAN 💗
+        </h2>
+
+        <div class="final-simple-wishes">
+
+            <p>
+                🌈 Semoga selalu bahagia
+            </p>
+
+            <p>
+                ✨ Rajin belajar
+            </p>
+
+            <p>
+                🌸 Semangat kejar cita-citamu!
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+
+<section class="scene" id="scene14">
+
+    <div class="closing-card">
+
+        <div class="closing-flower">
+            🌸
+        </div>
+
+        <h1 class="closing-title">
+            Sampai jumpa lagi,<br>
+            Pinkan! 💗
+        </h1>
+
+        <p class="closing-text">
+            Terima kasih sudah menyelesaikan<br>
+            kejutan ulang tahun ini. ✨
+        </p>
+
+        <div class="closing-big-heart">
+            💗
+        </div>
+
+        <p class="closing-wish">
+            Jangan lupa selalu tersenyum,<br>
+            bermimpi, dan jadi anak baik yaa! 🌈
+        </p>
+
+        <p class="closing-signature">
+            Dari kakak yang selalu mendoakan Pinkan ❤️
+        </p>
+
+        <div class="closing-stars">
+            ✨ ⭐ 🌸 ⭐ ✨
+        </div>
+
+    </div>
+
+</section>
+
+
+<audio id="birthdayMusic" loop>
+    <source src="assets/birthday-music.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
