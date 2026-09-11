@@ -2756,3 +2756,50 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+
+/* =========================================================
+   BIRTHDAY MUSIC - GITHUB PAGES SAFE
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const birthdayMusic = document.getElementById("birthdayMusic");
+
+    if (!birthdayMusic) {
+        console.log("❌ Audio birthdayMusic tidak ditemukan.");
+        return;
+    }
+
+    birthdayMusic.volume = 0.45;
+    birthdayMusic.loop = true;
+
+    // Coba langsung memainkan musik
+    const tryPlayMusic = () => {
+        birthdayMusic.play()
+            .then(() => {
+                console.log("🎵 Musik ulang tahun berhasil dimulai!");
+                removeMusicListeners();
+            })
+            .catch((error) => {
+                console.log("⏳ Autoplay diblokir browser. Menunggu interaksi...");
+            });
+    };
+
+    const removeMusicListeners = () => {
+        document.removeEventListener("click", tryPlayMusic);
+        document.removeEventListener("touchstart", tryPlayMusic);
+        document.removeEventListener("pointerdown", tryPlayMusic);
+        document.removeEventListener("keydown", tryPlayMusic);
+    };
+
+    // Coba autoplay
+    tryPlayMusic();
+
+    // Kalau diblokir Chrome, mulai pada interaksi pertama
+    document.addEventListener("click", tryPlayMusic);
+    document.addEventListener("touchstart", tryPlayMusic);
+    document.addEventListener("pointerdown", tryPlayMusic);
+    document.addEventListener("keydown", tryPlayMusic);
+
+});
