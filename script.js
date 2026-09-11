@@ -2803,3 +2803,37 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("keydown", tryPlayMusic);
 
 });
+
+/* =========================================================
+   START MUSIC WHEN PINKAN CLICKS AGE 7
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const birthdayMusic = document.getElementById("birthdayMusic");
+
+    if (!birthdayMusic) {
+        console.log("❌ birthdayMusic tidak ditemukan.");
+        return;
+    }
+
+    birthdayMusic.volume = 0.45;
+    birthdayMusic.loop = true;
+
+    document.querySelectorAll(".age-btn").forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            birthdayMusic.play()
+                .then(() => {
+                    console.log("🎵 Musik Pinkan berhasil dimulai!");
+                })
+                .catch(error => {
+                    console.log("❌ Musik gagal dimainkan:", error);
+                });
+
+        });
+
+    });
+
+});
